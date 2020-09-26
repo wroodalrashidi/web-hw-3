@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body-index">
+
+    
+   
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html" class="active">Home</a>
+
+    <div class="topnav" id="myTopnav">
+        <a href="./top-dishes.html" class="active">Top Dishes</a>
+          
+        <!-- Drop down -->
+        <div class="dropdown">
+          <button class="dropbtn">Cuisines 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./cuisines/italian.html">Italian</a>
+            <a href="./cuisines/chinese.html">Chinese</a>
+            <a href="./cuisines/mexican.html">Mexican</a>
+            <a href="./cuisines/indian.html">Indian</a>
+          </div>
+
+          
+        </div> 
+        
+
+        <!-- <div class="sidenav">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
+          </div> -->
+           
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+      
+      <!-- Side bar -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://twitter.com/wrrood_">Twitter</a>
+        <a href="https://www.instagram.com/?hl=en">Instgram</a>
+        <a href="https://code.kw/">Kuwait Codes</a>
+        
+      </div>
+      
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script> 
+
+
+    <div class="menu">
+        <h1 class="menu-title">Cusine </h1>
+        <hr />
+        <div class="imgs">
+        <a href="./cuisines/italian.html" > <img  src="./images/italian.jpg" alt="Italian Food" /></a>
+        <a href="./cuisines/chinese.html" > <img  src="./images/chinese.jpg" alt="Chinese Food" /></a>
+        <a href="./cuisines/mexican.html" > <img  src="./images/mexican2.jpg" alt="Mexican Food"/></a>
+        <a href="./cuisines/indian.html" > <img  src="./images/indian.jpeg" alt="Indian Food"/></a>
+        
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
