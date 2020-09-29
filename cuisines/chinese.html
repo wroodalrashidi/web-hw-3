@@ -8,6 +8,44 @@
 </head>
 <body>
    
+  
+  <div class="topnav" id="myTopnav">
+    <a href="../index.html" class="active">Home</a>
+
+<div class="topnav" id="myTopnav">
+    <a href="../top-dishes.html" class="active">Top Dishes</a>
+      
+    <!-- Drop down -->
+    <div class="dropdown">
+      <button class="dropbtn">Cuisines 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./italian.html">Italian</a>
+        <a href="./chinese.html">Chinese</a>
+        <a href="./mexican.html">Mexican</a>
+        <a href=".indian.html">Indian</a>
+      </div>
+
+      
+    </div> 
+  
+       
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+
 <div >
         <p style="padding: 15px;">Chinese Dishes</p> 
     <ul style="width: 100%">

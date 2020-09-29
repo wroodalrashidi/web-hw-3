@@ -8,6 +8,7 @@
 }
 body{
     background-color: rgba(32, 32, 32, 0.548);
+  
 }
 p{
     font-size: 30px;
@@ -131,7 +132,7 @@ html {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(251, 254, 255, 0.582);
+    background-color: rgba(235, 237, 238, 0.897);
     box-shadow:4px 4px 10px rgba(206, 206, 206, 0.74);
     padding: 10px;
     height: 600px;
@@ -153,12 +154,12 @@ html {
     box-shadow:4px 4px 20px rgba(206, 206, 206, 0.74);
     padding: 25px;
     height: 450px;
-    width: 900px;
+    width: 1105px;
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
     border-radius: 15px;
-
+    box-shadow: 3px 4px 10px rgba(255, 253, 253, 0.849);
   }
 
   
@@ -167,8 +168,8 @@ html {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
-    color: rgba(250, 244, 244, 0.699);
-    text-shadow: 3px 5px 10px rgba(7, 7, 7, 0.822);
+    color: rgba(15, 15, 15, 0.699);
+    text-shadow: 3px 5px 10px rgba(39, 39, 39, 0.952);
   }
   .imgs {
     display: flex;
@@ -178,9 +179,14 @@ html {
     
   }
   img {
-    width: 220px;
+   
+    width: 235px;
     height: 195px;
-    border-radius: 20px;
+    border-radius: 20px; 
+    padding: 10px;
+    
+    
+   
     
   }
 
@@ -228,7 +234,7 @@ hr{
   
     height: 250px;
     width: 600x;
-    box-shadow: 3px 4px 15px rgba(241, 239, 239, 0.637);
+    /* box-shadow: 3px 4px 10px rgba(241, 239, 239, 0.637); */
     
     
     
@@ -236,13 +242,13 @@ hr{
 
   /* side bar */
 
-   .sidenav {
+  .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -274,6 +280,5 @@ hr{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-
 
  

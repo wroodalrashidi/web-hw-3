@@ -5,56 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Dishes</title>
     <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body>
-    
-  <!-- Search Menu -->
-    <h2>Search Menu</h2>
+
+  
+   
+  <div class="topnav" id="myTopnav">
+    <a href="./index.html" class="active">Home</a>
+
+<div class="topnav" id="myTopnav">
+    <a href="./top-dishes.html" class="active">Top Dishes</a>
       
-    <div class="row">
-      <div class="left" style="background-color:#bbb;">
-        <h2>Menu</h2>
-        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-        <ul id="myMenu">
-          <li><a href="#">HTML</a></li>
-          <li><a href="#">CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-          <li><a href="#">PHP</a></li>
-          <li><a href="#">Python</a></li>
-          <li><a href="#">jQuery</a></li>
-          <li><a href="#">SQL</a></li>
-          <li><a href="#">Bootstrap</a></li>
-          <li><a href="#">Node.js</a></li>
-        </ul>
+    <!-- Drop down -->
+    <div class="dropdown">
+      <button class="dropbtn">Cuisines 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./cuisines/italian.html">Italian</a>
+        <a href="./cuisines/chinese.html">Chinese</a>
+        <a href="./cuisines/mexican.html">Mexican</a>
+        <a href="./cuisines/indian.html">Indian</a>
       </div>
+
       
-    
-    
-    <script>
-    function myFunction() {
-      var input, filter, ul, li, a, i;
-      input = document.getElementById("mySearch");
-      filter = input.value.toUpperCase();
-      ul = document.getElementById("myMenu");
-      li = ul.getElementsByTagName("li");
-      for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-          li[i].style.display = "";
-        } else {
-          li[i].style.display = "none";
-        }
-      }
-    }
-    </script>
-
-
-<div class="container">
-  <img src="./images/Red-Lamb.jpg" class="image">
-  <div class="overlay">
-    <div class="text">Hello World</div>
+    </div> 
+  
+       
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
-</div>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+
+
+
+    <h4>Top Desserts</h4>
+
+
+<section class="sections">
+  <article class="section__item">
+      <div class="section__content">
+        <div class="content">
+          <h2>Zenzai</h2>
+          <h3>
+            Japanese zenzai is an unusual dessert which combines thick red bean soup with mochi, the famous sticky rice cake.
+          </h3>
+        </div>
+      </div>
+
+    <img src="https://cdn.tasteatlas.com/Images/Dishes/35609b960c1b40b6be309ebbd5b0216c.jpg?w=905&h=510" alt="">
+  </article>
+
+
+  <article class="section__item">
+    <div class="section__content">
+      <div class="content">
+        <h2>Chiacchiere
+        </h2>
+        <h3>
+          These Italian carnival pastry fritters are made from dough that is cut into thin, rectangular sheets, which are then twisted into ribbons.
+        </h3>
+      </div>
+    </div>
+    <img src="https://cdn.tasteatlas.com/Images/Dishes/8b7e9c8a7ecc40e98b19b2b42306439a.jpg?w=905&h=510" alt="">
+  </article>
+
+
+
+  <article class="section__item">
+    <div class="section__content">
+      <div class="content">
+        <h2>Lokma
+        </h2>
+        <h3>
+          This internationally known, decadent, and sugar-packed dessert is usually made with a mixture of flour, sugar, yeast, and salt, which is deep-fried.
+        </h3>
+      </div>
+    </div>
+    <img src="https://cdn.tasteatlas.com/images/dishes/e460c51adc3447639c4418cbaa439309.jpg?w=905&h=510" alt="">
+  </article>
+
+
+  <article class="section__item">
+    <div class="section__content">
+      <div class="content">
+        <h2>Brigadeiro
+        </h2>
+        <h3>
+          Brigadeiro is a decadent Brazilian dessert made by heating three key ingredients together - unsalted butter, cocoa powder, and condensed milk.        </h3>
+      </div>
+    </div>
+
+  <img src="https://cdn.tasteatlas.com/Images/Dishes/b3e5d1f6fd5c4d5b8988dc1fae01f7a0.jpg?w=905&h=510" alt="">
+</article>
+</section>
 
 </body>
 </html>
